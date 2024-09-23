@@ -2,16 +2,130 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
+    <title>Кредиты</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/ubuntu/Ubuntu-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ubuntu/Ubuntu-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
+    <!-- <script src="scripts/index.js" defer></script> -->
   </head>
-  <body class="page__body">
+
+  <body class="page">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <p>Logo</p>
+        </div>
+
+        <button class="header__nav-toggle" type="button">
+          <span class="visually-hidden">Открыть меню навигации</span>
+        </button>
+
+        <nav class="header__navigation navigation" aria-label="Главное меню">
+          <!-- <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#tours">Туры</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#training">Обучение</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#about">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#reviews">Отзывы</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#gallery">Фотографии</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#footer">Контакты</a>
+            </li>
+          </ul> -->
+        </nav>
+        <div class="header__premium">
+          <a href="#">
+            <p class="header__premium-label">Premium</p>
+            <svg aria-hidden="true" focusable="false" width="20" height="18">
+              <use href="icons/stack.svg#diamond"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page__main">
+      <div class="page__container container">
+        <h1 class="page__title">Закончились кредиты?</h1>
+
+        <section class="offers">
+          <h2 class="visually-hidden">Наши предложения</h2>
+          <div class="offers__swiper swiper">
+            <div class="offers__wrapper swiper-wrapper">
+              <div class="offers__slide swiper-slide">
+                <div class="offers__label">One time offer!</div>
+                <p class="offers__price">
+                  <p class="offers__price-points">50</p>
+                  <p class="offers__prise-dollars">/$5</p>
+                </p>
+                <button class="offers__button" type="button">Buy now</button>
+              </div>
+
+              <div class="offers__slide swiper-slide">
+                <p class="offers__price">
+                  <p class="offers__price-points">50</p>
+                  <p class="offers__prise-dollars">/$5</p>
+                </p>
+                <button class="offers__button" type="button">Buy now</button>
+              </div>
+
+              <div class="offers__slide swiper-slide">
+                <p class="offers__price">
+                  <p class="offers__price-points">50</p>
+                  <p class="offers__prise-dollars">/$5</p>
+                </p>
+                <button class="offers__button" type="button">Buy now</button>
+              </div>
+
+              <div class="offers__slide swiper-slide">
+                <p class="offers__price">
+                  <p class="offers__price-points">50</p>
+                  <p class="offers__prise-dollars">/$5</p>
+                </p>
+                <button class="offers__button" type="button">Buy now</button>
+              </div>
+
+              <div class="offers__slide swiper-slide">
+                <p class="offers__price">
+                  <p class="offers__price-points">50</p>
+                  <p class="offers__prise-dollars">/$5</p>
+                </p>
+                <button class="offers__button" type="button">Buy now</button>
+              </div>
+
+              <div class="offers__slide swiper-slide">
+                <p class="offers__price">
+                  <p class="offers__price-points">50</p>
+                  <p class="offers__prise-dollars">/$5</p>
+                </p>
+                <button class="offers__button" type="button">Buy now</button>
+              </div>
+
+              <div class="offers__pagination"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </main>
+
+    <!-- <script type="module" src="js/main.js"></script> -->
+  </body>
+
+  <!-- <body class="page__body">
     <header class="header">Шапка</header>
     <main>
       <h1>Страница для старта</h1>
     </main>
-  </body>
+  </body> -->
 </html>
