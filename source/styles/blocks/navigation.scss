@@ -1,0 +1,27 @@
+.navigation__list {
+  @include list;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding: 0;
+    gap: 30px;
+  }
+}
+
+.navigation__link {
+  font-size: 16px;
+  line-height: 18.4px;
+  font-weight: 700;
+  color: $color-white;
+  text-decoration: none;
+  padding: 5px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

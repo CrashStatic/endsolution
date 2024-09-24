@@ -1,0 +1,120 @@
+.profile {
+  width: 270px;
+  border: 2px solid hsla(282, 29%, 53%, 0.2);
+  background-color: hsla(282, 29%, 53%, 0.1);
+  border-radius: 10px;
+  flex-shrink: 0;
+  padding: 18px 20px 20px 16px;
+  margin-top: 10px;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.profile__image {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile__main-info {
+  display: flex;
+  gap: 15px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $color-violet;
+    opacity: 0.2;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+  }
+}
+
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.profile__info-name {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18.4px;
+}
+
+.profile__info-premium {
+  font-size: 10px;
+  line-height: 11.5px;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $color-premium;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.profile__list {
+  @include list;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 43px;
+  margin-left: 12px;
+}
+
+.profile__item {
+  font-size: 16px;
+  line-height: 18.4px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  gap: 30px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 18px;
+  }
+}
+
+.profile__item--user::before {
+  background-image: url("../../icons/user.svg");
+}
+
+.profile__item--photo::before {
+  background-image: url("../../icons/photo.svg");
+}
+
+.profile__item--messages::before {
+  background-image: url("../../icons/mail.svg");
+  background-size: 20px 20px;
+}
+
+.profile__item--favorite::before {
+  background-image: url("../../icons/heart.svg");
+  background-size: 22px 21px;
+}
+
+.profile__item--eye::before {
+  background-image: url("../../icons/eye.svg");
+  background-size: 22px 19px;
+}
+
+.profile__item--settings::before {
+  background-image: url("../../icons/setting.svg");
+  background-size: 22px 19px;
+}
+
+.profile__item--out::before {
+  background-image: url("../../icons/exit.svg");
+  background-size: 22px 19px;
+}

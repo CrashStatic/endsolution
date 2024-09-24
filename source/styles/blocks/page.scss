@@ -1,6 +1,5 @@
 .page {
   min-width: 320px;
-  min-height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -16,6 +15,26 @@
   line-height: 13.8px;
   overflow: hidden;
   padding-top: 15px;
+  padding-bottom: 100px;
+
+  @media (min-width: $desktop-width) {
+    padding: 20px 20px 200px;
+  }
+}
+
+.page__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+}
+
+.page__container {
+  @media (min-width: $desktop-width) {
+    width: 870px;
+  }
 }
 
 .page__title {
@@ -32,5 +51,15 @@
     background-color: $color-violet;
     opacity: 0.2;
     margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 46px;
+    text-shadow: 4px 4px 0px 0px hsla(0, 0%, 0%, 0.25);
+
+    &::after {
+      margin-top: 20px;
+    }
   }
 }

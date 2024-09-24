@@ -1,0 +1,43 @@
+.stock {
+  display: flex;
+  border-radius: 10px;
+  padding: 13px 13px 14px 11px;
+  background-color: $color-stock;
+  margin-top: 29px;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.stock__title {
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 1.5px;
+  color: $color-accent;
+  -webkit-text-stroke: 1px $color-white;
+  -moz-text-stroke: 1px $color-white;
+  margin: 0;
+  margin-right: 25px;
+}
+
+.stock__description {
+  font-size: 16px;
+  line-height: 18.4px;
+  color: $color-white;
+  margin: 0;
+  margin-right: 38px;
+}
+
+.stock__counter {
+  display: block;
+  padding: 5px 20px 5px 26px;
+  border-radius: 5px;
+  background-color: $color-white;
+  color: $color-main;
+  font-size: 40px;
+  line-height: 46px;
+  font-weight: 400;
+}
