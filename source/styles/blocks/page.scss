@@ -19,48 +19,6 @@
 
   @media (min-width: $desktop-width) {
     padding: 20px 20px 200px;
-    // position: relative;
-    // z-index: 1;
-
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   width: 442px;
-    //   height: 447px;
-    //   background-image:
-    //   image-set(
-    //     url("../../images/pattern-left@1x.webp") type("image/webp") 1x,
-    //     url("../../images/pattern-left@2x.webp") type("image/webp") 2x,
-    //     url("../../images/pattern-left@1x.png") type("image/jpg") 1x,
-    //     url("../../images/pattern-left@2x.png") type("image/jpg") 2x);
-    //   background-repeat: no-repeat;
-    //   transform: rotate(55.7deg) scale(2);
-    //   filter: blur(2px);
-    //   position: absolute;
-    //   top: 528px;
-    //   left: 73px;
-    //   z-index: -1;
-    // }
-
-    // &::after {
-    //   content: "";
-    //   display: block;
-    //   width: 588px;
-    //   height: 519px;
-    //   background-image:
-    //   image-set(
-    //     url("../../images/pattern-right@1x.webp") type("image/webp") 1x,
-    //     url("../../images/pattern-right@2x.webp") type("image/webp") 2x,
-    //     url("../../images/pattern-right@1x.png") type("image/jpg") 1x,
-    //     url("../../images/pattern-right@2x.png") type("image/jpg") 2x);
-    //   background-repeat: no-repeat;
-    //   transform: rotate(135.5deg);
-    //   filter: blur(4px);
-    //   position: absolute;
-    //   top: 192px;
-    //   right: -89px;
-    //   z-index: -1;
-    // }
   }
 }
 
@@ -72,46 +30,6 @@
     gap: 30px;
     position: relative;
     z-index: 1;
-
-    // &::before {
-    //   content: "";
-    //   display: block;
-    //   width: 442px;
-    //   height: 447px;
-    //   background-image:
-    //   image-set(
-    //     url("../../images/pattern-left@1x.webp") type("image/webp") 1x,
-    //     url("../../images/pattern-left@2x.webp") type("image/webp") 2x,
-    //     url("../../images/pattern-left@1x.png") type("image/jpg") 1x,
-    //     url("../../images/pattern-left@2x.png") type("image/jpg") 2x);
-    //   background-repeat: no-repeat;
-    //   transform: rotate(55.7deg) scale(2);
-    //   filter: blur(2px);
-    //   position: absolute;
-    //   top: 508px;
-    //   left: -301px;
-    //   z-index: -1;
-    // }
-
-    // &::after {
-    //   content: "";
-    //   display: block;
-    //   width: 588px;
-    //   height: 519px;
-    //   background-image:
-    //   image-set(
-    //     url("../../images/pattern-right@1x.webp") type("image/webp") 1x,
-    //     url("../../images/pattern-right@2x.webp") type("image/webp") 2x,
-    //     url("../../images/pattern-right@1x.png") type("image/jpg") 1x,
-    //     url("../../images/pattern-right@2x.png") type("image/jpg") 2x);
-    //   background-repeat: no-repeat;
-    //   transform: rotate(135.5deg);
-    //   filter: blur(4px);
-    //   position: absolute;
-    //   top: 172px;
-    //   right: -464px;
-    //   z-index: -1;
-    // }
   }
 }
 
@@ -178,7 +96,7 @@
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 46px;
-    text-shadow: 4px 4px 0px 0px hsla(0, 0%, 0%, 0.25);
+    text-shadow: 4px 4px 0 0 hsla(0, 0%, 0%, 0.25);
 
     &::after {
       margin-top: 20px;

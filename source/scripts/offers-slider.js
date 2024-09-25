@@ -1,5 +1,3 @@
-// import Swiper from '../vendor/swiper-bundle.mjs';
-// import { Pagination } from '../vendor/swiper/modules';
 import Swiper from './vendor/swiper-bundle.mjs';
 
 const initOffersSlider = () => {

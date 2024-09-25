@@ -60,6 +60,7 @@
           </picture>
         </div>
         <article class="page__profile profile">
+          <h2 class="visually-hidden">Профиль</h2>
           <div class="profile__main-info">
             <div class="profile__image">
               <picture>
@@ -173,12 +174,10 @@
 
             <div class="offers__agree">
               <input class="offers__checkbox-input" type="checkbox" name="agree" id="agree" required checked>
-              <label class="offers__checkbox-label" for="agree">
-                <p>By clicking Checkbox you agree and accept our
+              <label class="offers__checkbox-label" for="agree">By clicking Checkbox you agree and accept our
                   <a href="#">Privacy Policy</a>
                   , and
                   <a href="#">Terms of use</a>
-                </p>
               </label>
             </div>
           </section>
@@ -187,14 +186,16 @@
             <h2 class="visually-hidden">Преимущества Premium</h2>
             <div class="advantages__container">
               <ul class="advantages__list">
-                <li class="advantages__item advantages__item--mail" tabindex="1">Отправлять сообщения</li>
-                <li class="advantages__item advantages__item--view" tabindex="1">Просматривать скрытые фото</li>
-                <li class="advantages__item advantages__item--gift" tabindex="1">Оплачивать подарки</li>
-                <li class="advantages__item advantages__item--privilege" tabindex="1">Пользоваться другими премиум функциями</li>
+                <li class="advantages__item advantages__item--mail" tabindex="0">Отправлять сообщения</li>
+                <li class="advantages__item advantages__item--view" tabindex="0">Просматривать скрытые фото</li>
+                <li class="advantages__item advantages__item--gift" tabindex="0">Оплачивать подарки</li>
+                <li class="advantages__item advantages__item--privilege" tabindex="0">Пользоваться другими премиум функциями</li>
               </ul>
               <div class="advantages__image">
-                <source type="image/webp" srcset="images/diamond@1x.webp 1x, images/diamond@2x.webp 2x" width="49" height="49">
-                <img src="images/diamond@1x.png" srcset="images/diamond@2x.png 2x" width="83" height="69" alt="Значок Premium">
+                <picture>
+                  <source type="image/webp" srcset="images/diamond@1x.webp 1x, images/diamond@2x.webp 2x" width="49" height="49">
+                  <img src="images/diamond@1x.png" srcset="images/diamond@2x.png 2x" width="83" height="69" alt="Значок Premium">
+                </picture>
               </div>
             </div>
           </section>
