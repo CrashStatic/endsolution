@@ -1,7 +1,6 @@
 const advList = document.querySelector('.advantages__list');
 const fragment = document.createDocumentFragment();
 const itemMail = document.querySelector('.advantages__item--mail');
-// const items = document.querySelectorAll('.advantages__item');
 
 const renderItem = () => {
   if (window.innerWidth > 991) {

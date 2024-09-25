@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Кредиты</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon-32x32.png" type="image/png" >
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
     <link rel="preload" href="fonts/ubuntu/Ubuntu-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ubuntu/Ubuntu-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ubuntu/Ubuntu-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -44,6 +47,18 @@
 
     <main class="page__main">
       <div class="page__wrapper">
+        <div class="page__bubbles-left" id="bubbles-left">
+          <picture>
+            <source type="image/webp" srcset="images/pattern-left@1x.webp 1x, images/pattern-left@2x.webp 2x" width="442" height="447">
+            <img data-depth="0.4" src="images/pattern-left@1x.png" srcset="images/pattern-left@2x.png 2x" width="442" height="447" alt="Фоновое изображение слева">
+          </picture>
+        </div>
+        <div class="page__bubbles-right" id="bubbles-right">
+          <picture>
+            <source type="image/webp" srcset="images/pattern-right@1x.webp 1x, images/pattern-right@2x.webp 2x" width="588" height="519">
+            <img src="images/pattern-right@1x.png" srcset="images/pattern-right@2x.png 2x" data-depth="0.4" width="588" height="519" alt="Фоновое изображение справа">
+          </picture>
+        </div>
         <article class="page__profile profile">
           <div class="profile__main-info">
             <div class="profile__image">
@@ -58,13 +73,27 @@
             </div>
           </div>
           <ul class="profile__list">
-            <li class="profile__item profile__item--user">Profile</li>
-            <li class="profile__item profile__item--photo">My photos</li>
-            <li class="profile__item profile__item--messages">Messages</li>
-            <li class="profile__item profile__item--favorite">Favorites</li>
-            <li class="profile__item profile__item--eye">Guests</li>
-            <li class="profile__item profile__item--settings">Settings</li>
-            <li class="profile__item profile__item--out">Log out</li>
+            <li class="profile__item profile__item--user">
+              <a href="#">Profile</a>
+            </li>
+            <li class="profile__item profile__item--photo">
+              <a href="#">My photos</a>
+            </li>
+            <li class="profile__item profile__item--messages">
+              <a href="#">Messages</a>
+            </li>
+            <li class="profile__item profile__item--favorite">
+              <a href="#">Favorites</a>
+            </li>
+            <li class="profile__item profile__item--eye">
+              <a href="#">Guests</a>
+            </li>
+            <li class="profile__item profile__item--settings">
+              <a href="#">Settings</a>
+            </li>
+            <li class="profile__item profile__item--out">
+              <a href="#">Log out</a>
+            </li>
           </ul>
         </article>
 
@@ -156,9 +185,6 @@
 
           <section class="advantages container">
             <h2 class="visually-hidden">Преимущества Premium</h2>
-            <!-- <div class="advantages__image">
-              <img src="images/diamond.png" srcset="images/diamond@2x.png 2x" width="83" height="69" alt="Значок Premium">
-            </div> -->
             <div class="advantages__container">
               <ul class="advantages__list">
                 <li class="advantages__item advantages__item--mail">Отправлять сообщения</li>
@@ -176,6 +202,14 @@
       </div>
     </main>
 
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+      const leftBubbles = document.getElementById('bubbles-left');
+      let leftBubblesInstance = new Parallax(leftBubbles);
+
+    </script> -->
+    <!-- <script src="path/to/parallax.js"></script> -->
     <script type="module" src="scripts/index.js"></script>
   </body>
 

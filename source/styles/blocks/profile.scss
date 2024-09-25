@@ -71,12 +71,20 @@
 }
 
 .profile__item {
-  font-size: 16px;
-  line-height: 18.4px;
-  font-weight: 400;
   position: relative;
   display: flex;
   gap: 30px;
+
+  a {
+    font-size: 16px;
+    line-height: 18.4px;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
 
   &::before {
     content: "";
