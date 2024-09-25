@@ -8,13 +8,13 @@
 // let leftBubblesInstance = new Parallax(leftBubbles);
 // new Parallax(rightBubbles);
 
-const bg = document.querySelector('.page__bubbles-left');
-const bg2 = document.querySelector('.page__bubbles-right');
+const leftBubbles = document.querySelector('.page__bubbles-left');
+const rightBubbles = document.querySelector('.page__bubbles-right');
 
-window.addEventListener('mousemove', (e) => {
-  const x = e.clientX / window.innerWidth;
-  const y = e.clientY / window.innerHeight;
-  bg.style.transform = `translate(+${ x * 50 }px, -${ y * 50 }px)`;
-  bg2.style.transform = `translate(+${ x * 50 }px, -${ y * 50 }px)`;
+window.addEventListener('mousemove', (evt) => {
+  const x = evt.clientX / window.innerWidth;
+  const y = evt.clientY / window.innerHeight;
+  leftBubbles.style.transform = `translate(+${ x * 50 }px, -${ y * 50 }px)`;
+  rightBubbles.style.transform = `translate(+${ x * 50 }px, -${ y * 50 }px)`;
 
 });

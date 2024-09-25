@@ -8,6 +8,7 @@ const initMenu = () => {
 
   const toggleMenu = () => {
     nav.classList.toggle('header__navigation--opened');
+    navButton.classList.toggle('header__nav-toggle--cross');
   };
 
   navButton.addEventListener('click', toggleMenu);
