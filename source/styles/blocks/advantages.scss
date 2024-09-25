@@ -8,11 +8,6 @@
 .advantages__container {
   display: flex;
   flex-direction: column-reverse;
-
-  // @media (min-width: $desktop-width) {
-  //   margin-left: 200px;
-  //   position: relative;
-  // }
 }
 
 .advantages__list {
@@ -108,6 +103,10 @@
       left: 42px;
     }
   }
+
+  &:hover::after {
+    background-color: $color-accent;
+  }
 }
 
 .advantages__item--mail::after {
@@ -136,18 +135,10 @@
 
 .advantages__item--gift::after {
   mask-image: url("../../icons/gift.svg");
-
-  // @media (min-width: $desktop-width) {
-  //   left: 24px;
-  // }
 }
 
 .advantages__item--privilege::after {
   mask-image: url("../../icons/heart.svg");
-
-  // @media (min-width: $desktop-width) {
-  //   left: 42px;
-  // }
 }
 
 .advantages__item--setting::after {

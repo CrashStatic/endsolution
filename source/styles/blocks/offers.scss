@@ -87,23 +87,23 @@
   position: relative;
   padding-left: 101px;
 
-  .offers__label {
-    position: absolute;
-    left: -20px;
-  }
+  // .offers__label {
+  //   position: absolute;
+  //   left: -20px;
+  // }
 
   @media (min-width: $desktop-width) {
     width: unset;
     margin-left: 0;
     padding-left: 15px;
 
-    .offers__label {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: -13px;
-      width: max-content;
-    }
+    // .offers__label {
+    //   position: absolute;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   top: -13px;
+    //   width: max-content;
+    // }
   }
 }
 
@@ -172,6 +172,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  text-align: end;
 
   &::after {
     content: "CR";
@@ -196,6 +197,18 @@
   padding: 3px 10px 4px;
   background-color: $color-accent;
   border-radius: 5px;
+  max-width: 125px;
+  position: absolute;
+  left: -20px;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -13px;
+    max-width: unset;
+    width: max-content;
+  }
 }
 
 .offers__pagination {
@@ -255,6 +268,7 @@
   border: 1px solid $color-violet;
   appearance: unset;
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .offers__checkbox-input:checked::after {
