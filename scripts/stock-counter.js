@@ -1,0 +1,1 @@
+var l=document.querySelector("#countdown .stock__counter-display");function c(){let t=1800,s=setInterval(()=>{if(t>0){t--;let e=t/3600^0,n=(t-e*3600)/60^0,o=t-e*3600-n*60,i=`${e<10?`0${e}`:e} : ${n<10?`0${n}`:n} : ${o<10?`0${o}`:o}`;l.textContent=i}else clearInterval(s),t=1800,c()},1e3)}c();

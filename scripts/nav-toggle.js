@@ -1,0 +1,1 @@
+var e=document.querySelector(".header__nav-toggle"),n=document.querySelector(".header__navigation"),o=()=>{if(!n||!e)return;let t=()=>{n.classList.toggle("header__navigation--opened")};e.addEventListener("click",t)};export{o as initMenu};

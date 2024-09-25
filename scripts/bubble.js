@@ -1,0 +1,1 @@
+var o=document.querySelector(".page__bubbles-left"),r=document.querySelector(".page__bubbles-right");window.addEventListener("mousemove",e=>{let t=e.clientX/window.innerWidth,n=e.clientY/window.innerHeight;o.style.transform=`translate(+${t*50}px, -${n*50}px)`,r.style.transform=`translate(+${t*50}px, -${n*50}px)`});
