@@ -1,1 +1,1 @@
-var e=document.querySelector(".header__nav-toggle"),n=document.querySelector(".header__navigation"),o=()=>{if(!n||!e)return;let t=()=>{n.classList.toggle("header__navigation--opened")};e.addEventListener("click",t)};export{o as initMenu};
+var e=document.querySelector(".header__nav-toggle"),t=document.querySelector(".header__navigation"),o=()=>{if(!t||!e)return;let n=()=>{t.classList.toggle("header__navigation--opened"),e.classList.toggle("header__nav-toggle--cross")};e.addEventListener("click",n)};export{o as initMenu};
