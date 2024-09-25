@@ -9,12 +9,12 @@
 // new Parallax(rightBubbles);
 
 const bg = document.querySelector('.page__bubbles-left');
-// const fog1 = document.querySelector('.mouse-parallax-fog-1');
-// const fog2 = document.querySelector('.mouse-parallax-fog-2');
+const bg2 = document.querySelector('.page__bubbles-right');
+
 window.addEventListener('mousemove', (e) => {
   const x = e.clientX / window.innerWidth;
   const y = e.clientY / window.innerHeight;
-  bg.style.transform = `translate(-${ x * 50 }px, -${ y * 50 }px)`;
-  // fog1.style.transform = `translate(+${ x * 50 }px, -${ y * 50 }px)`;
-  // fog2.style.transform = `translate(-${ x * 20 }px, -${ y * 20 }px)`;
+  bg.style.transform = `translate(+${ x * 50 }px, -${ y * 50 }px)`;
+  bg2.style.transform = `translate(+${ x * 50 }px, -${ y * 50 }px)`;
+
 });

@@ -1,12 +1,10 @@
-import Swiper from 'swiper/bundle';
-import { Pagination } from 'swiper/modules';
-import 'swiper/css/bundle';
-import 'swiper/css/pagination';
+// import Swiper from '../vendor/swiper-bundle.mjs';
+// import { Pagination } from '../vendor/swiper/modules';
+import Swiper from './vendor/swiper-bundle.mjs';
 
 const initOffersSlider = () => {
   new Swiper('.offers__swiper', {
 
-    modules: [Pagination],
     loop: true,
     slidesPerView: 'auto',
     slidesPerGroup: 1,

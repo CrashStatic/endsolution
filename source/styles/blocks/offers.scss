@@ -3,7 +3,7 @@
   padding-bottom: 31px;
 
   @media (min-width: $desktop-width) {
-    padding-top: 26px;
+    padding-top: 13px;
     padding-bottom: 33px;
     margin-right: -10px;
   }
@@ -15,6 +15,7 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 12px;
     display: flex;
+    padding-top: 13px;
   }
 }
 
@@ -100,7 +101,7 @@
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      top: -11px;
+      top: -13px;
       width: max-content;
     }
   }
